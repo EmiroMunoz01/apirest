@@ -56,7 +56,7 @@ public class ClienteController {
     // 10 personalizaremos las respuestas http con ResponseStatus
 
     @DeleteMapping("/cliente/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     // 8 cuando estamos pasando un parametro por variable usaremos el @PathVariable
     public void eliminar(@PathVariable Integer id) {
         // 5 debemos pasar un cliente por parametro para su eliminacion, entonces lo
